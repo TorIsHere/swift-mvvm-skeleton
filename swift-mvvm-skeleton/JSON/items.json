@@ -1,0 +1,38 @@
+[
+ {
+ "name"         : "product1",
+ "description"  : "Very very super awesome superb product 1",
+ "img_url"      : "https://placehold.it/1600x1200",
+ "thumb_url"    : "https://placehold.it/100x75",
+ "price"        : "10",
+ "currency"     : "usd"
+ "quantity"     : "50"
+ },
+ {
+ "name"         : "product2",
+ "description"  : "Very very super awesome superb product 2",
+ "img_url"      : "https://placehold.it/1600x1200",
+ "thumb_url"    : "https://placehold.it/100x75",
+ "price"        : "20.99",
+ "currency"     : "usd"
+ "quantity"     : "10"
+ },
+ {
+ "name"         : "product3",
+ "description"  : "Very very super awesome superb product 3",
+ "img_url"      : "https://placehold.it/1600x1200",
+ "thumb_url"    : "https://placehold.it/100x75",
+ "price"        : "0.45",
+ "currency"     : "usd"
+ "quantity"     : "0"
+ },
+ {
+ "name"         : "product4",
+ "description"  : "Very very super awesome superb product 4",
+ "img_url"      : "https://placehold.it/1600x1200",
+ "thumb_url"    : "https://placehold.it/100x75",
+ "price"        : "10000000",
+ "currency"     : "usd"
+ "quantity"     : "5000"
+ }
+]

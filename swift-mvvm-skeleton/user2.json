@@ -1,0 +1,10 @@
+{
+    "user_name"     : "tester2",
+    "age"           : "26",
+    "birthday"      : "1990-12-8",
+    "sex"           : "f",
+    "first_name"    : "Jane",
+    "last_name"     : "Snow",
+    "img_url"      : "http2://placehold.it/300x300",
+    "thumb_url"      : "http2://placehold.it/100x100"
+}

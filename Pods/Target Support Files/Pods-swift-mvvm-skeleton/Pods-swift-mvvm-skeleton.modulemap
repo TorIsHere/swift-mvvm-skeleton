@@ -1,0 +1,6 @@
+framework module Pods_swift_mvvm_skeleton {
+  umbrella header "Pods-swift-mvvm-skeleton-umbrella.h"
+
+  export *
+  module * { export * }
+}
