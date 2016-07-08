@@ -29,8 +29,6 @@ class UserViewModel: NSObject {
         self.init()
         self.userModel = UserModel(json: json)
         
-        //self.profileImage = Al self.userModel.imgUrl
-        
         self.firstName = self.userModel.firstName
         self.lastName = self.userModel.lastName
         self.sexText = self.userModel.sex.rawValue
