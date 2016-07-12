@@ -14,11 +14,11 @@ class UserViewModel: NSObject {
 
     var userModel:UserModel!
     
-    var profileImage:UIImage!
-    var firstName: String!
-    var lastName: String!
-    var sexText: String!
-    var ageText: String!
+    dynamic var profileImage:UIImage!
+    dynamic var firstName: String!
+    dynamic var lastName: String!
+    dynamic var sexText: String!
+    dynamic var ageText: String!
     
     override init() {
         super.init()

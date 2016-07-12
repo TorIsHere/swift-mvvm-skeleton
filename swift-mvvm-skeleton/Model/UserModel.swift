@@ -66,6 +66,9 @@ class UserModel: NSObject {
             if let thumbUrl = json["thumb_url"] as! String? {
                 self.thumbUrl = thumbUrl
             }
+            if let age = json["age"] as! String? {
+                self.age = Int(age)
+            }
             if let sexText = json["sex"] as! String? {
                 if sexText == "m" {
                     self.sex = Sex.male
