@@ -31,7 +31,11 @@ class UserViewModel: NSObject {
         
         self.firstName = self.userModel.firstName
         self.lastName = self.userModel.lastName
-        self.sexText = self.userModel.sex.rawValue
+        
+        if let userSex = self.userModel.sex {
+            self.sexText = userSex.rawValue
+        }
+        
         self.ageText = String(self.userModel.age)
         
         Alamofire.request(.GET, self.userModel.imgUrl)

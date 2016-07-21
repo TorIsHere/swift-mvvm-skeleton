@@ -16,14 +16,22 @@ class UserModel: NSObject {
         case undeclared = "undeclared"
     }
     
-    var userName:String!
-    var firstName:String!
-    var lastName:String!
-    var imgUrl:String!
-    var thumbUrl:String!
-    var sex:Sex!
-    var age:Int!
-    var birthday:NSDate!
+    dynamic var userName:String!
+    dynamic var firstName:String!
+    dynamic var lastName:String!
+    dynamic var imgUrl:String!
+    dynamic var thumbUrl:String!
+    //dynamic var sex:Sex!
+    dynamic private(set) var sexRaw: String?
+    
+    var sex : Sex? {
+        didSet {
+            sexRaw = sex?.rawValue
+        }
+    }
+    
+    dynamic var age:NSNumber!
+    dynamic var birthday:NSDate!
     
     override init() {
         super.init()
@@ -50,6 +58,7 @@ class UserModel: NSObject {
     }
     
     init(json:[String: AnyObject]) {
+        super.init()
         if NSJSONSerialization.isValidJSONObject(json) {
             if let userName = json["user_name"] as! String? {
                 self.userName = userName
